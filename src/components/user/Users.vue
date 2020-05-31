@@ -112,7 +112,6 @@
 
     <!-- 分配角色的对话框 -->
     <el-dialog title="分配角色" :visible.sync="setRoleDialogVisible" width="50%" @close="setRoleDialogClosed">
-      <!-- 树形控件 -->
       <div>
         <p>当前的用户：{{userInfo.username}}</p>
         <p>当前的角色: {{userInfo.role_name}}</p>
