@@ -35,7 +35,7 @@
         <el-table-column label="操作" width="130px">
           <template slot-scope="scope">
             <!-- 修改按钮 -->
-            <el-button @click="showEditDialog(scope.row.id)" size="mini" type="primary" icon="el-icon-edit"></el-button>
+            <el-button size="mini" type="primary" icon="el-icon-edit"></el-button>
             <!-- 删除按钮 -->
             <el-button @click="removeById(scope.row.goods_id)" size="mini" type="danger" icon="el-icon-delete"></el-button>
           </template>
@@ -102,6 +102,7 @@ export default {
       this.queryInfo.pagenum = newPage
       this.getGoodsList()
     },
+
     // 根据id删除对应的用户
     async removeById(id) {
       // 弹框询问用户是否删除
